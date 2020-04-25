@@ -1942,7 +1942,7 @@
                     this.street_suffix(options).name) + " " + street;
                 break;
             case 'ro':
-                street = this.get("streets")[options.country.toLowerCase()];
+                street = this.pick(this.get("streets")[options.country.toLowerCase()]);
                 break;
         }
         return street;
